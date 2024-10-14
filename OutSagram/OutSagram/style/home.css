@@ -1,0 +1,125 @@
+﻿body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #4b3ef1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1d0deb;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #070737;
+    }
+
+
+.post-container {
+    background-color: darkslateblue;
+    justify-content: center;
+}
+
+.posts {
+    margin-top: 70px;
+    background-color: darkgray;
+    border: 2px solid darkgray;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.auther-name {
+    margin: auto 0px;
+    color: red;
+}
+
+.post {
+    background-color: white;
+    border: 2px solid darkgray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.details {
+    width: 400px;
+    height: auto;
+    padding: 10px 20px 30px 20px;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    background-color: gray;
+    border-radius: 15px;
+    display: none;
+}
+
+.details-img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.details .col {
+    padding: 0px;
+    text-align: center;
+}
+
+.auther-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+    .auther-image:hover ~ .details {
+        display: block;
+    }
+
+.post-image {
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.fa-heart {
+    color: gray;
+    font-size: 30px;
+}
+
+.fa-heart-broken {
+    color: gray;
+    font-size: 30px;
+}
+
+.fa-comment {
+    color: gray;
+    font-size: 30px
+}
+
+.fa-heart:hover {
+    color: red;
+}
+
+.fa-heart-broken:hover {
+    color: black;
+}
+
+.fa-comment:hover {
+    color: dodgerblue;
+}
+
+
+.comment {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px;
+}
+
+.modal-body {
+    padding: 0rem;
+    overflow-x: hidden;
+}

@@ -1,0 +1,75 @@
+﻿@model List<OutSagram.Models.post>
+@{
+    ViewBag.Title = "profile";
+    Layout = "~/Views/OutSagram/Shared/navAndFooter.cshtml";
+}
+@section linkStyle
+{
+
+    <link href="~/style/profile.css" rel="stylesheet" />
+
+}
+<div class="row profile">
+    <div class="col col-lg-7 col-md-9 col-sm-12 col-12 profile-container">
+        <div class="row user-data">
+            <img class="col col-lg-3 col-md-4 col-sm-6 col-6 user-image" src="~/images/login/Landscape wallpaper 8k [7680x4320].png" />
+            <h2 class="col col-lg-9 col-md-8 col-sm-6 col-6 user_name">@ViewBag.nme</h2>
+            <!-- Button trigger modal -->
+            <button type="button" class="col col-lg-12 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Launch static backdrop modal
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @* end modaaal *@
+            <div class="col col-lg-12 col-md-12 col-sm-12 col-12 description">
+                <p>belal hesham \n best programmer in the world</p>
+            </div>
+            <div class="followers"> 30 followers</div>
+            @Html.ActionLink("Add new post", "create",new{Id=ViewBag.idss},new{@class = "btn btn-info" })
+
+        </div>
+        <hr />
+
+        <div class="user-photos">
+            
+            @foreach (var item in Model)
+             { 
+                <div class="card">
+
+                    <img src="~/images/@item.photo" />
+                    <div class="hover">
+                        <div class="react">
+                            <a href=""><i class="fa fa-heart" style="font-size:24px"></i></a>
+                            <a href=""><i class="fa fa-comments-o" style="font-size:24px"></i></a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <br />
+    </div>
+</div>
+
+
+
+
+
+
+

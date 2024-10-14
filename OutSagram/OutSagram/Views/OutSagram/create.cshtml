@@ -1,0 +1,31 @@
+﻿@model OutSagram.Models.post
+@{
+    ViewBag.Title = "create";
+    Layout = null;
+}
+
+<form method="post" enctype="multipart/form-data">
+
+    @*@Html.Hidden("st", (object)ViewBag.st)*@
+    <table>
+        @Html.Hidden("autherID", (object)ViewBag.st)
+        <tr>
+            <td>@Html.LabelFor(n => n.header)</td>
+            <td>@Html.TextBoxFor(n => n.header) </td>
+            <td>@Html.ValidationMessageFor(n => n.header)</td>
+        </tr>
+
+        <tr>
+            <td>@Html.LabelFor(n => n.photo)</td>
+            <td><input type="file" name="imagee" /> </td>
+            <td>@Html.ValidationMessageFor(n => n.photo)</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Add" /> </td>
+            <td></td>
+
+        </tr>
+    </table>
+</form>

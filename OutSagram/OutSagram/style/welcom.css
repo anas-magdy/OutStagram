@@ -1,0 +1,61 @@
+﻿body {
+    margin :0;
+    padding:0;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.ball ,.ball2
+{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    background-color: black;
+    margin: auto auto;
+
+}
+.ball
+{
+    animation:ballAnimation 2s 3;
+    margin-top:350px
+}
+.ball2
+{
+    animation: ballAnimation2 .9s 1;
+    display: none;
+}
+@keyframes ballAnimation
+{
+    10%{
+        width:100px;
+        height: 100px;
+    }
+    30%
+    {
+        height:100px;
+        width: 80px;
+    }
+    50%
+    {
+        height: 60px;
+        width: 114px;
+        transform: translateY(300px)
+
+    }
+    75%
+    {
+        height: 100px;
+        width: 114px;
+    }
+    100%
+    {
+        transform: translateY(350px);
+        /*top:350px;*/
+    }
+
+}
+
+

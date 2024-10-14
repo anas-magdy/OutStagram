@@ -1,0 +1,44 @@
+﻿body
+{
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+.navbar-brand {
+    font-family: 'Send Flowers', cursive;
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bold;
+}
+.navbar-brand span {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 0px 10px;
+    font-weight: 900;
+}
+.prof-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('../images/login/Landscape wallpaper 8k [7680x4320].png');
+    background-size: cover;
+}
+.fas {
+    color: white;
+    font-size: 25px;
+}
+
+

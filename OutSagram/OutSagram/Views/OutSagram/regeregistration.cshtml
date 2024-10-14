@@ -1,0 +1,65 @@
+﻿@model OutSagram.Models.user
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/libraries/boootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/libraries/fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap" rel="stylesheet">
+    <link href="~/style/regeregistration.css" rel="stylesheet" />
+    <title>regeregistration</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="col col-lg-5 col-md-9 col-sm-11 col-11">
+            <p class="outstagram"><span>Out</span>Stagram</p>
+            <form method="post">
+
+                <div class="row">
+                    @Html.TextBoxFor(n => n.firstName, new { @class = "col col-10", type = "text", placeholder = "first Name" })
+                    <p style="color:red;">@Html.ValidationMessageFor(n => n.firstName)</p>
+                    @Html.TextBoxFor(n => n.lastName, new { @class = "col col-10", type = "text", placeholder = "last Name" })
+                    <p style="color:red;">@Html.ValidationMessageFor(n => n.lastName)</p>
+                    @Html.TextBoxFor(n => n.email, new { @class = "col col-10", type = "email", placeholder = "Email" })
+                    <p style="color:red;">@Html.ValidationMessageFor(n => n.email)</p>
+                    @Html.TextBoxFor(n => n.phone, new { @class = "col col-10", type = "tel", placeholder = "Mobile" })
+                    <p style="color:red;">@Html.ValidationMessageFor(n => n.phone)</p>
+                    @Html.TextBoxFor(n => n.userName, new { @class = "col col-10", type = "text", placeholder = "user name" })
+                    <p style="color:red;">@Html.ValidationMessageFor(n => n.userName)</p>
+                    @Html.PasswordFor(n => n.password, new { @class = "col col-10", type = "password", placeholder = "Password" })
+                    <p style="color:red;">@Html.ValidationMessageFor(n => n.password)</p>
+                    @Html.PasswordFor(n => n.confirm_password, new { @class = "col col-10", type = "password", placeholder = "confirm Password" })
+                    <p style="color:red;">@Html.ValidationMessageFor(n => n.confirm_password)</p>
+                    @*<input class="col col-10" type="text" placeholder="first Name">
+                        <input class="col col-10" type="text" placeholder="Last Name">
+                        <input class="col col-10" type="email" placeholder="Email">
+                        <input class="col col-10" type="tel" placeholder="Mobile">
+
+                        <input class="col col-10" type="text" placeholder="user name">
+                        <input class="col col-10" type="password" placeholder="Password">
+                        <input class="col col-10" type="password" placeholder="confirm Password">*@
+                    <button class="col col-10 login_btn" type="submit">sign up</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="~/libraries/boootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="~/libraries/boootstrap/js/popper.min.js"></script>
+    <script src="~/libraries/boootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-1.8.0.min.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</body>
+</html>

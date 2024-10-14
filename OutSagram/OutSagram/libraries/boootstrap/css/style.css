@@ -1,0 +1,135 @@
+body
+{
+    font-family: 'pacifico,cursive';
+}
+/************************************start navbar*********************************************************/
+.navbar-dark .navbar-brand 
+{
+    color: lightseagreen;
+    font-size: 30px;
+}
+.navbar-nav .nav-link 
+{
+    margin-right: 30px;
+}
+.navbar-dark .navbar-nav .nav-link
+{
+    color: rgba(255,255,255,.8);
+   
+}
+.navbar-dark .navbar-nav .nav-link:hover
+{
+    background-color:lightseagreen ;
+    transition: all ease .7s;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+/************************************end navbar************************************************************/
+/***************************************start section-1(cover)*********************************************/
+.section
+{
+    background-size: cover;
+    height: 500px;
+    background-image: url("../imags/coverr.jpg");
+    padding-top: 100px;
+    background-position: center center;
+}
+.hamada
+{
+    margin-left: 50px;
+}
+/****************************************end section-1(the cover)***********************************************/
+/****************************************************start section-2********************************************/
+.sec-2
+{
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, rgb(16,169,247), white, white,black,red);
+}
+.sec-2 h1
+{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.image
+{
+    border-radius: 100%;
+}
+.sec-2 .col
+{
+    margin-top: 30px;
+}
+
+/**********************************************end section-2*******************************************************/
+/**************************************start secondary section*****************************************************/
+
+.secondary .btn
+{
+    float: right;
+    margin-top: -40px;
+}
+.secondary p
+{
+    margin-top: -30px;
+    float: left;
+}
+hr
+{
+    margin-top: 60px;
+}
+/**********************************************end secondarry section***********************************************/
+/*************************************************start section-3**************************************************/
+.sec-3
+{
+    text-align: center;
+}
+.button
+{
+    min-width: 100px;
+    height: 40px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.button:hover
+{
+    background-color: black;
+    color: white;
+    border: white;
+    transform: scale(1.1);
+    transition: all ease-in-out .5s;
+}
+.sec-3 p 
+{
+    margin-top: 30px;
+}
+/************************************end section-3*********************************************************************/
+/******************************************start section-4************************************************************/
+.sec-4
+{
+    background-color: rgb( 185, 226, 247);
+    padding: 60px 60px;
+    text-align: center;
+}
+.sec-4 .row
+{
+    justify-content: center;
+}
+
+.back
+{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    
+}
+.front
+{
+    border: 3px solid rgb( 185, 226, 247);
+    border-radius: 20px;
+}
+/********************************************************************************************************************/
+/***********************************                        good luck                    ***************************/

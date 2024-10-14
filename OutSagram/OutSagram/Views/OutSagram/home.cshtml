@@ -1,0 +1,95 @@
+﻿@*@model OutSagram.Models.user*@
+@{
+    Layout = "~/Views/OutSagram/Shared/navAndFooter.cshtml";
+}
+@section linkStyle
+{
+    <link href="~/style/home.css" rel="stylesheet" />
+}
+
+<div class="row post-container">
+    <div class="col col-lg-5 col-md-9 col-sm-12 col-12 posts">
+        <div class="row post">
+            <a href="#" class="col col-lg-2 col-md-2 col-sm-2 col-2 auther-image">
+                <img class="col col-lg-2 col-md-2 col-sm-2 col-2 auther-image" src="~/images/login/Landscape wallpaper 8k [7680x4320].png" alt="image" />
+            </a>
+            <h3 class="col col-lg-10 col-md-9 col-sm-8 col-8 auther-name">anas</h3>
+            @* ################################################################################################## *@
+            <div class="details">
+                <div class="row">
+                    <img class="col col-lg-2 col-md-2 col-sm-2 col-2 auther-image" src="~/images/login/Landscape wallpaper 8k [7680x4320].png" alt="image" />
+                    <h3 class="col col-lg-10 col-md-9 col-sm-8 col-8 auther-name">anas</h3>
+                    <hr />
+                    <div class="col col-lg-4">
+                        <p>follower</p>
+                        <p>145</p>
+                        <img src="~/images/login/Landscape wallpaper 8k [7680x4320].png" alt="Alternate Text" class="details-img" />
+                    </div>
+                    <div class="col col-lg-4">
+                        <p>following</p>
+                        <p>56</p>
+                        <img src="~/images/login/Landscape wallpaper 8k [7680x4320].png" alt="Alternate Text" class="details-img" />
+                    </div>
+                    <div class="col col-lg-4">
+                        <p>posts</p>
+                        <p>122</p>
+                        <img src="~/images/login/starry-sky-scotland.jpg" class="details-img" />
+                    </div>
+                    <button class="col-6 btn btn-primary">Follow</button>
+                </div>
+            </div>
+            <img class="col col-12 post-image" src="~/images/login/Landscape wallpaper 8k [7680x4320].png" />
+            @* ################################################################################################## *@
+            <h5 class="col col-12">header</h5>
+            <h6 class="col col-12>">sub header</h6>
+            <p class="content col col-12">ana ta3ban mnk ya donya ana ta3ban awyyyyyyyyyyyyyyyyyyyy</p>
+            @* ################################################################################################## *@
+            <hr />
+            <div class="col col-lg-4 col-md-4 col-sm-4 col-4 comment" data-bs-toggle="tooltip" data-bs-placement="bottom" title="100 love">
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-4 col-4 comment" data-bs-toggle="tooltip" data-bs-placement="bottom" title="50 dislike">
+                <i class="fas fa-heart-broken"></i>
+            </div>
+
+
+            <!-- Button trigger modal -->
+            <div type="button" class="col col-lg-4 col-md-4 col-sm-4 col-4 comment" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fas fa-comment"></i>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-xl modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col col-lg-7 col-md-0">
+                                    <img src="~/images/login/starry-sky-scotland.jpg" style="width:100%;" />
+                                </div>
+                                <div class="col-lg-5 col-md-12">
+                                    <div class="comment-dialog">
+
+                                    </div>
+                                    <p>anasdns ajkbkdjb kjbdkijbbffhjyymk</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <form action="/" method="post" class="col col-lg-12">
+                                <div class="row">
+                                    @*  @Html.TextBoxFor(n => n, new { @class = "comment-input col col-11", placeholder = "enter comment" })*@
+                                    <input type="text" class="comment-input col col-lg-11" placeholder="Enter comment" />
+                                    <button type="submit" class="col col-lg-1" style="border:none;background-color:white;">
+                                        <i class="fas fa-paper-plane" style="color: black; font-size:30px;"></i>
+                                    </button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
